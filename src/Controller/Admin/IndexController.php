@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @author gallarian1337
+ * @author gallarian
  * @email gallarian@gmail.com
  */
 

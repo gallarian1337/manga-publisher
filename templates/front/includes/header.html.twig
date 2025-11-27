@@ -1,0 +1,13 @@
+<header>
+    <nav>
+        <a href="{{ path('front_index') }}">accueil</a>
+        {% if app.user %}
+            <form action="{{ path('front_logout') }}" method="post">
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('logout') }}">
+                <button type="submit">deconnexion</button>
+            </form>
+        {% else %}
+            <a href="{{ path('front_login') }}">connexion</a>
+        {% endif %}
+    </nav>
+</header>
